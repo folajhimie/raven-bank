@@ -15,7 +15,7 @@ function Chart() {
   return (
     <div>
       <div>
-        <section
+        <section 
           className="
           bg-center flex "
         >
