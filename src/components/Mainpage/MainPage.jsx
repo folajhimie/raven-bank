@@ -6,13 +6,14 @@ import Shape from "../../assets/svg/Shape.svg"
 import Chart from "./Chart/Chart.jsx"
 import OrderChart from "./OrderBook/Order-Chart.jsx";
 import OpenOrder from "./OpenOrder/OpenOrder.jsx"
+import Buy from "./Buy/Buy.jsx"
 
 
 
 function MainPage() {
   return (
-    <div>
-      <div>
+    <div className="bg-primary">
+      <div className="bg-primary">
         {/* <div className="bg-slate-900 opacity-30 absolute z-20 lg:h-screen md:h-[70vh] sm:h-screen xs:h-screen w-full"></div> */}
         <section
           className="
@@ -115,7 +116,7 @@ function MainPage() {
 
       </div>
 
-      <div className="grid md:grid-cols-5 xs:grid-cols-1 gap-2">
+      <div className="grid md:grid-cols-5 xs:grid-cols-1 md:gap-2 xs:gap-0">
         <div className="col-span-4">
           <div className="flex flex-col">
             <div className="grid md:grid-cols-4 xs:grid-cols-1 md:gap-1 xs:gap-0 h-full bg-primary">
@@ -150,7 +151,7 @@ function MainPage() {
         </div>
 
         <div className="col-span-1">
-          <div>Hello</div>
+          <Buy />
 
         </div>
       </div>

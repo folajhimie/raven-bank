@@ -21,11 +21,11 @@ function OrderChart() {
     const [heading, setHeading] = useState("Order Book");
 
     return (
-        <div>
+        <div className="rounded-lg bg-[#20252b] px-4 py-2">
             <div>
                 <section
                     className="
-                     flex flex-col justify-center items-center bg-primary  h-full  md:w-[275px] xs:w-full py-1
+                     flex flex-col justify-center items-center   h-full  md:w-[275px] xs:w-full py-1
                     "
                 >
                     <div>

@@ -149,89 +149,8 @@ function NavbarLinks({OpenScreen}) {
                       <div className="mt-2 mb-2 text-start text-[15px] leading-6 font-semibold">
                         Procurement
                       </div>
-                      <div className="text-gray-600 mb-2 flex text-[0.675rem] leading-5">
-                        Receive packages in your name and we’ll ship it to your
-                        doorstep Receive packages in your name and we’ll ship it
-                        to your doorstep
-                      </div>
-                      <div className="py-0 text-primary underline text-[10px]">
-                        <span className="flex" onClick={OpenScreen}>
-                          <Link to="/procurement" className="flex">
-                            Learn More
-                            <span className="text-[10px] mt-1">
-                              <RiArrowRightSLine />
-                            </span>
-                          </Link>
-                        </span>
-                      </div>
                     </div>
 
-                    {/* <div className="h-48 w-[1px] bg-primary"></div> */}
-
-                    <div className="py-2 flex flex-col max-w-[30rem]">
-                      <div className="mt-2 mb-2 text-start text-[15px] leading-6 font-semibold">
-                        <div>Logistics</div>
-                      </div>
-                      <div className="text-gray-600 mb-2 flex text-[0.65rem] leading-5">
-                        Shipping from various stores? Manage, pay and choose
-                        delivery all in one place Receive packages in your name
-                        and we’ll ship it to your doorstep
-                      </div>
-                      <div className="py-0 text-primary underline text-[10px]">
-                        <span className="flex" onClick={OpenScreen}>
-                          <Link to="/logistics" className="flex">
-                            Learn More
-                            <span className="text-[10px] mt-1">
-                              <RiArrowRightSLine />
-                            </span>
-                          </Link>
-                        </span>
-                      </div>
-                    </div>
-
-                    <div className="py-2 flex flex-col max-w-[30rem]">
-                      <div className="mt-2 mb-2 text-start text-[15px] leading-6 font-semibold">
-                        <div>International Shipping</div>
-                      </div>
-                      <div className="text-gray-600 mb-2 flex text-[0.65rem] leading-5">
-                        Shipping from various stores? Manage, pay and choose
-                        delivery all in one place Receive packages in your name
-                        and we’ll ship it to your doorstep
-                      </div>
-                      <div className="py-0 text-primary underline text-[10px]">
-                        <span className="flex" onClick={OpenScreen}>
-                          <Link to="/shipping" className="flex">
-                            Learn More
-                            <span className="text-[10px] mt-1">
-                              <RiArrowRightSLine />
-                            </span>
-                          </Link>
-                        </span>
-                      </div>
-                    </div>
-
-                    <div className="py-2 flex flex-col max-w-[30rem]">
-                      <div>
-                        <div className="mt-2 mb-2 text-start text-[15px] leading-6 font-semibold">
-                          Warehousing
-                        </div>
-                      </div>
-                      <div className="text-gray-600 mb-2 flex text-[0.65rem] leading-5">
-                        We help thousands of people move shipments everyday.
-                        choose delivery all in one place Receive packages in
-                        your name and we’ll ship it to your doorstep
-                      </div>
-                      <div className="py-0 text-primary underline text-[10px]">
-                        <span className="flex" onClick={OpenScreen}>
-                          <Link to="/warehousing" className="flex">
-                            Learn More
-                            <span className="text-[10px] mt-1">
-                              <RiArrowRightSLine />
-                            </span>
-                          </Link>
-                        </span>
-                      </div>
-                    </div>
                   </div>
                 </>
               )}

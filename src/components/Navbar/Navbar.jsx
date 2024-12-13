@@ -149,16 +149,6 @@ const Navbar = ({ isTopOfPage }) => {
           >
             <div className="flex items-center justify-between w-full">
               <div className="py-3">
-                {/* <div className=" text-start flex justify-start  mx-auto text-primary cursor-pointer">
-                  <Link className="link" to="/">
-                    <span className="text-secondary text-3xl font-semibold capitalize">
-                      Cart<span className="text-orange-500">Tel</span>
-                    </span>
-                  </Link>
-                  <span className="dot font-bold text-primary w-5 text-3xl">
-                    .
-                  </span>
-                </div> */}
                 <Link className=" w-full  flex flex-row justify-center" to="/">
 
                   <div className=" text-start justify-start mx-auto text-primary cursor-pointer w-full flex">
@@ -173,55 +163,82 @@ const Navbar = ({ isTopOfPage }) => {
                   </div>
                 </Link>
               </div>
-              <button
-                className="text-primary text-3xl py-3"
-                onClick={() => setOpen(!open)}
-              >
-                {/* <ion-icon name={`${open ? "close" : "menu"}`}></ion-icon> */}
-                <svg width="23" height="23" viewBox="0 0 23 23">
-                  <Path
-                    animate={open ? "open" : "closed"}
-                    initial={false}
-                    variants={{
-                      closed: {
-                        d: "M 2 2.5 L 20 2.5",
-                        stroke: "rgb(16,63,105)",
-                      },
-                      open: {
-                        d: "M 3 16.5 L 17 2.5",
-                        stroke: "rgb(16,63,105)",
-                      },
-                    }}
-                    transition={transition}
-                  />
-                  <Path
-                    d="M 2 9.423 L 20 9.423"
-                    stroke="#103f69"
-                    animate={open ? "open" : "closed"}
-                    initial={false}
-                    variants={{
-                      closed: { opacity: 1 },
-                      open: { opacity: 0 },
-                    }}
-                    transition={transition}
-                  />
-                  <Path
-                    animate={open ? "open" : "closed"}
-                    initial={false}
-                    variants={{
-                      closed: {
-                        d: "M 2 16.346 L 20 16.346",
-                        stroke: "rgb(16,63,105)",
-                      },
-                      open: {
-                        d: "M 3 2.5 L 17 16.346",
-                        stroke: "rgb(16,63,105)",
-                      },
-                    }}
-                    transition={transition}
-                  />
-                </svg>
-              </button>
+
+              <div className="flex gap-3 justify-center items-center">
+                <div className="block">
+                  <div className="flex items-center justify-center h-full py-1 px-2 rounded gap-2" >
+                    <img
+                      alt=""
+                      src={Profile}
+                      className="text-[1px] md:w-[36px] md:h-[36px] xs:w-full xs:h-full"
+                    />
+                  </div>
+                </div>
+
+                <div className="block">
+                  <div className="flex items-center justify-center h-full px-2 rounded gap-2" >
+                    <img
+                      alt=""
+                      src={Globe}
+                      className="text-[1px] md:w-[24px] md:h-[24px] xs:w-full xs:h-full"
+                    />
+                    
+                  </div>
+                </div>
+                <button
+                  className="text-primary text-3xl py-3"
+                  onClick={() => setOpen(!open)}
+                >
+                  {/* <ion-icon name={`${open ? "close" : "menu"}`}></ion-icon> */}
+                  <svg width="23" height="23" viewBox="0 0 23 23">
+                    <Path
+                      animate={open ? "open" : "closed"}
+                      initial={false}
+                      variants={{
+                        closed: {
+                          d: "M 2 2.5 L 20 2.5",
+                          stroke: "rgba(129,139,160,1)",
+                        },
+                        open: {
+                          d: "M 3 16.5 L 17 2.5",
+                          stroke: "rgba(129,139,160,1)",
+                        },
+                      }}
+                      transition={transition}
+                    />
+                    <Path
+                      d="M 2 9.423 L 20 9.423"
+                      stroke="#818ba0"
+                      animate={open ? "open" : "closed"}
+                      initial={false}
+                      variants={{
+                        closed: { opacity: 1 },
+                        open: { opacity: 0 },
+                      }}
+                      transition={transition}
+                    />
+                    <Path
+                      animate={open ? "open" : "closed"}
+                      initial={false}
+                      variants={{
+                        closed: {
+                          d: "M 2 16.346 L 20 16.346",
+                          stroke: "rgba(129,139,160,1)",
+                        },
+                        open: {
+                          d: "M 3 2.5 L 17 16.346",
+                          stroke: "rgba(129,139,160,1)",
+                        },
+                      }}
+                      transition={transition}
+                    />
+                  </svg>
+                </button>
+
+              </div>
+
+
+
             </div>
           </div>
           <div>
@@ -233,7 +250,7 @@ const Navbar = ({ isTopOfPage }) => {
 
             <ul
               className={`
-              bg-white fixed h-fit top-[65px] overflow-y-auto bottom-0 py-10 px-4 md:w-[450px] w-full
+              bg-primary fixed h-fit top-[65px] overflow-y-auto bottom-0 py-10 px-4 md:w-[450px] w-full
               duration-500 ${open ? "left-0" : "left-[-100%]"}
               `}
               style={{
@@ -246,29 +263,26 @@ const Navbar = ({ isTopOfPage }) => {
               }}
             >
               <li>
-                <Link to="/" className="text-primary py-4 px-1 inline-block capitalize">
-                  Sell On CartTel
+                <Link to="/" className="text-white py-4 px-1 inline-block capitalize">
+                  Exchange
                 </Link>
               </li>
               <li>
-                <Link to="/" className="text-primary py-4 px-1 inline-block capitalize">
-                  Shop On CartTel
+                <Link to="/" className="text-white py-4 px-1 inline-block capitalize">
+                  Wallet
                 </Link>
               </li>
-              <NavbarLinks OpenScreen={OpenScreen} />
-              <div className="mb-10 py-6 flex justify-center flex-col  sm:w-full">
-                <Link className="link flex items-center" to="/auth/register">
-                  <button className=" w-full rounded-sm p-2 px-1 text-sm bg-plain text-white">
-                    Create an Account
-                  </button>
+              <li>
+                <Link to="/" className="text-white py-4 px-1 inline-block capitalize">
+                  Roqqu Hub
                 </Link>
+              </li>
+              <li>
+                <Link to="/" className="text-white py-4 px-1 inline-block capitalize">
+                  Log Out
+                </Link>
+              </li>
 
-                <Link className="link flex items-center" to="/auth/register">
-                  <button className="my-4 w-full rounded-sm p-2 px-1 text-sm bg-white text-primary border-2">
-                    Sign In
-                  </button>
-                </Link>
-              </div>
             </ul>
           </div>
         </div>
