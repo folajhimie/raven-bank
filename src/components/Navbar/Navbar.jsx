@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 import NavLinks from "./NavLinks";
 import useMediaQuery from "../../hooks/useMediaQuery.jsx";
 // import { links } from "./Mylinks";
-import NavbarLinks from "./NavbarLinks";
+// import NavbarLinks from "./NavbarLinks";
 // import CartTel from "../../assets/Home/CARTEL.png"
 
 import Sisyphus from "../../assets/Home/home.svg";
